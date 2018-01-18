@@ -12,4 +12,9 @@ public class ReplaceVowelCharacterTest {
         assertEquals("mommy", replaceVC.replace("a"));
     }
 
+    @Test
+    public void shouldReturnItselfWhenInputAConsonant() {
+        assertEquals("b",replaceVC.replace("b"));
+    }
+
 }
