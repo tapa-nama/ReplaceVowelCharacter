@@ -1,29 +1,17 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+对于一个给定的字符串，如果其中元音字母数目在整个字符串中的比例超过了30%，则将该元音字母替换成字符串mommy，额外的，在替换时，如果有连续的元音出现，则仅
+替换一次。
 
-### What is this repository for? ###
+### Specification By Example ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* hmm 经过处理后，应该保持原状
+* she 经过处理后，应该被替换为 shmommy
+* hear 经过处理后，应该被替换为 hmommyr
 
-### How do I get set up? ###
+### TASKING DEMO ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* 输入一个元音，预期返回为mommy
+* 输入一个非元音字符，预期返回字符本身
+* 输入一个元音超过30%的字符串，预期元音被替换
+* 输入一个元音超过30%，并存在连续元音字符，预期连续的元音字符只被替换一次
