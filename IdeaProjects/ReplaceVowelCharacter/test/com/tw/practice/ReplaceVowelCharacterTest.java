@@ -27,4 +27,9 @@ public class ReplaceVowelCharacterTest {
         assertEquals("python",replaceVC.replace("python"));
     }
 
+    @Test
+    public void shouldReplaceOneVowelWhenVowelsMoreThan30PercentAndContinuous() {
+        assertEquals("shmommyr",replaceVC.replace("shear"));
+    }
+
 }

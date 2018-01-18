@@ -8,13 +8,18 @@ public class ReplaceVowelCharacter {
 
         double percent = getPercent(str);
         String result = "";
+        boolean flag = false;
 
         if (percent > LIMIT_PERCENT) {
             for (int i = 0; i < str.length(); i++) {
-                if (isVowel(str.charAt(i))) {
+                if (isVowel(str.charAt(i)) && !flag) {
                     result += "mommy";
+                    flag = true;
+                } else if (isVowel(str.charAt(i)) && flag) {
+                    result += "";
                 } else {
                     result += str.charAt(i);
+                    flag = false;
                 }
             }
         } else {
